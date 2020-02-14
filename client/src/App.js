@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import DataFetch from './components/DataFetch';
 import NavBar from './components/NavBar';
 import EmailForm from './components/EmailForm';
