@@ -2,6 +2,11 @@ import React from "react";
 import axios from "axios";
 import Display from "./Display";
 
+export function sum(a, b){
+
+    return a + b;
+}
+
 export default class DataFetch extends React.Component {
   constructor() {
     super();

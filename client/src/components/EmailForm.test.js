@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as rtl from '@testing-library/react';
 import EmailForm from './EmailForm';
 
-it('The email form is visible', () => {
-  const div = document.createElement('form');
-  ReactDOM.render(<EmailForm />, div);
-  ReactDOM.unmountComponentAtNode(form);
-});
+it('renders correctly emailForm', () => {
+    const wrapper = (<EmailForm />)
+  
+    expect(<EmailForm/>).toMatchSnapshot();
+  });
